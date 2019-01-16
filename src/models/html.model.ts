@@ -4,8 +4,6 @@
  * @author Mamontov Andrey, 03/2018
  */
 
-import { UFEvent } from './event.model';
-
 interface BaseType {
   id?: string;
   name?: string;
@@ -63,7 +61,7 @@ export interface UFElement {
   data?: any;
   attributes: Array<UFAttribute>; // array of html attributes
   properties: Array<UFProperty>;  // array of css properties
-  events: Array<UFEvent>;         // array of element's events
+  events: Array<any>;         // array of element's events
   children: Array<UFElement>;     // array of children html elements
   systemId: string;   // system
   parentId: string;   // system
